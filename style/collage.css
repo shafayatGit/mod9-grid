@@ -1,0 +1,46 @@
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.row{
+    height: 400px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row div{
+    flex: 1;
+}
+.second_row img{
+    height: 50%;
+}
+
+.third_row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    
+}
+
+@media screen and (max-width:576px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .third_row{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .second_row img{
+        height: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+}

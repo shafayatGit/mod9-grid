@@ -22,6 +22,8 @@ img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 5px;
+    object-fit: cover;
+    overflow: hidden;
     
 }
 
@@ -35,6 +37,7 @@ img{
     }
     .second_row img{
         height: 100%;
+
     }
 }
 
